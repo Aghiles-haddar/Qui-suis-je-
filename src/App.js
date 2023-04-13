@@ -10,6 +10,10 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import {themeContext} from './Contexte'
+import { Parallax } from "react-parallax";
+import Space from './img/x2.png'
+import Fond from './img/fond.png'
+
 
 
 
@@ -21,7 +25,13 @@ function App() {
     <Navbar/>
     <Intro/>
     <Services/>
-    <Experience/>
+    
+    <Parallax strength={-200} blur={{min:-5, max:5}} bgImage={Space}>
+       <div className="para">
+        <Experience/>
+       </div>
+    </Parallax>
+    
     <Works/>
     <Portfolio/>
     <Testimonials/>
@@ -30,5 +40,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

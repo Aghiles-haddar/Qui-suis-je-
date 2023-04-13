@@ -1,13 +1,13 @@
 :root
 {
   --yellow: #F5C32C;
-    --orange : #FCA61F;
-    --black : #242D49;
+    --orange : #fbe201;
+    --black : #000000;
     --gray : #788097;
     --blueCard : #DDF8FE;
     --purple: rgb(238 210 255);
     --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-    --orangeCard: rgba(252, 166, 31, 0.45);
+    --orangeCard: rgba(234, 255, 0, 0.45);
     --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
@@ -34,5 +34,17 @@
   color: var(--orange);
   border: 1px solid var(--orange);
 }
+@media screen and (max-width: 480px){
+  .App{
+    padding: 0.5rem 1rem;
+  }
+}
 
-
+.para{
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 90px;
+}

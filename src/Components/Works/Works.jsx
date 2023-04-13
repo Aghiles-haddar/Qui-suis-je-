@@ -5,14 +5,21 @@ import Fiverr from '../../img/fiverr.png';
 import Amazon from '../../img/amazon.png';
 import Shopify from '../../img/Shopify.png';
 import Facebook from '../../img/Facebook.png';
+import {themeContext} from '../../Contexte'
+import { useContext } from "react";
+import { motion } from "framer-motion";
+
+
 
 
 
 const Works = () => {
+    const theme = useContext(themeContext)
+    const darkMode = theme.state.darkMode
     return (
         <div className="works">
             <div className="awesome">
-                <span>Works for All these</span>
+                <span style={{color: darkMode? 'white': ''}}>Works for All these</span>
                 <span>Brands & Clients</span>
                 <span>
                     je sais vraiment pas quoi faire ou plutot quoi ecrire moi je sais que ecrire en vrai de vrai parce que c'est la vie d'artiste
@@ -29,13 +36,18 @@ const Works = () => {
                     </button>
                 </a>
                 
-                <div className="blur s-blur1" style={{ background: '#abf1ff94'}}></div>
+                <div className="blur s-blur1" style={{ background: '#abf1ff94'}} style={{color: darkMode? '#FCA61F': ''}}></div>
             </div>
 
             {/* right side */}
 
             <div className="w-right">
-                <div className="w-mainCircle">
+                <motion.div
+                initial={{rotate:45}}
+                whileInView={{rotate:0}}
+                viewport={{margin:'-20px'}}
+                transition={{duration:3.5, type: 'spring'}}
+                className="w-mainCircle">
 
                     <div className="w-seeCircle">
                         <img src={Upwork} alt="" />
@@ -49,7 +61,7 @@ const Works = () => {
                         <img src={Amazon} alt="" />
                     </div>{""}
 
-                    <div className="w-seeCircle">
+                    <div className="w-seeCircle" >
                         <img src={Shopify} alt="" />
                     </div>
 
@@ -57,10 +69,10 @@ const Works = () => {
                         <img src={Facebook} alt="" />
                     </div>
 
-                </div>
+                </motion.div>
 
                 {/* backgrounds Circles */}
-                <div className="w-backCircle blueCircle"></div>
+                <div className="w-backCircle blueCircle" ></div>
                 <div className="w-backCircle yellowCircle"></div>
             </div>
 

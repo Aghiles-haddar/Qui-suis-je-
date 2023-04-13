@@ -4,6 +4,7 @@
     margin: -0.5rem -3.5rem;
     position: relative;
     margin-top: -7rem;
+    padding: 0%;
 }
 
 .f-content{
@@ -13,11 +14,13 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    gap: 4rem;
+    gap: 1.5rem;
     color: white;
+    top: 30px;
 }
 
 .f-icons{
     display: flex;
-    gap: 2rem ;
+    gap: 8rem ;
 }
+

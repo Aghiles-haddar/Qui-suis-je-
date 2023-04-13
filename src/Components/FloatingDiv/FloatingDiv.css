@@ -1,12 +1,17 @@
 .FloatingDiv{
     justify-content: space-around;
     display: flex;
-    background: white;
+    background: linear-gradient(to bottom, rgb(255, 242, 0), rgb(255, 255, 255) , rgba(237, 237, 237, 0.386));
     box-shadow: var(--boxShadow);
     border-radius: 17px;
     align-items: center;
-    padding: 0px 28px 0px 0px;
+    padding: 0px 20px 0px 0px;
     height: 4.5rem;
+}
+
+.FloatingDiv>*{
+    position: relative;
+    right: 40px;
 }
 
 .FloatingDiv>img{
@@ -14,6 +19,8 @@
 }
 
 .FloatingDiv>span{
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: larsseit;
+    font-size: 18px;
+    color: black;
 }
+

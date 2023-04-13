@@ -2,6 +2,8 @@
     display: flex;
     height: 77vh;
     margin-top: 6rem;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 .i-left{
@@ -31,9 +33,9 @@
 
 .i-name>:nth-child(3){
     font-weight: 100;
-    font-size: 14px;
-    color: var(--gray);
-    margin-top: 10px;
+    font-size: 20px;
+    color: var(--grey);
+    margin-top: 45px;
 }
 
 .i-button{
@@ -55,6 +57,10 @@
 .i-icons>*:hover{
     cursor: pointer;
     transform: scale(0.6);
+}
+
+.space-style{
+    color: #fbe201;
 }
 
 /* Debut de la partie droite  */
@@ -85,6 +91,19 @@
     transform: scale(1.4);
     left: 25%;
 }
+
+.space{
+    height: 400px;
+    position: relative;
+    right: 40px;
+}
+
+.explorer{
+    height: 200px;
+    border-radius: 0px !important;
+}
+
+
 
 /* Debut de la dérniere image flottante  */
 
