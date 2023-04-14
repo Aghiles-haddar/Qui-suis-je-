@@ -9,6 +9,12 @@ import 'swiper/css'
 import {themeContext} from '../../Contexte'
 import { useContext } from "react";
 import Dashboard from '../../img/dashboard.png'
+import projet1 from '../../img/projet1.png'
+import tasty from '../../img/tasty2.png'
+import lock from '../../img/lock.png'
+import responsive from '../../img/responsive.png'
+import formulaire from '../../img/formulaire.png'
+import respace from '../../img/respace.png'
 
 
 
@@ -30,19 +36,19 @@ const Portfolio = () => {
             className="portfolio-slider"
             >
                 <SwiperSlide>
-                    <img src={Sidebar} alt="" />
+                    <img src={Dashboard} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <img src={Ecommerce} alt="" />
+                    <img src={projet1} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <img src={HDC} alt="" />
+                    <img src={tasty} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <img src={MusicApp} alt="" />
+                    <img src={respace} alt="" />
                 </SwiperSlide>
 
             </Swiper>
@@ -53,15 +59,15 @@ const Portfolio = () => {
             className="portfolio-slider"
             >
                 <SwiperSlide>
-                    <img src={Sidebar} alt="" />
+                    <img src={responsive} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <img src={Ecommerce} alt="" />
+                    <img src={lock} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <img src={HDC} alt="" />
+                    <img src={formulaire} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
